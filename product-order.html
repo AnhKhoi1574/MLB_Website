@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Order Page</title>
+    <link rel="shortcut icon" href="images/mlb-favicons.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        nav {
+            font-size: larger;
+            margin: 20px;
+            word-spacing: 30px;
+        }
+    
+        table {
+            text-align: center;
+        }
+    
+        footer {
+            background-color: #3A3839;
+            padding: 2px;
+            color: white;
+        }
+        footer a {
+            color: white;
+        }
+    
+        footer a:hover {
+            color: black;
+        }
+    
+        footer a:active {
+            color: #4D4D4D;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    
+        a:hover {
+            background: #EBEBEB;
+        }
+        a:active {
+            color: #4D4D4D;
+        }
+        fieldset {
+            margin: 20px;
+        }
+    </style>    
+</head>
+<body>
+    <center>
+        <header>
+            <a href="index.html"><img src="images/mlb-small-logo.png" alt="mlb logo"></a>
+            <nav>
+                <b>
+                    <a href="https://vn.mlb-korea.com/collections/quan-ao">APPAREL</a>
+                    &#124;
+                    <a href="https://vn.mlb-korea.com/collections/mu-non">CAP</a> &#124;
+                    <a href="https://vn.mlb-korea.com/collections/giay">SHOES</a> &#124;
+                    <a href="https://vn.mlb-korea.com/collections/tui">BAG</a> &#124;
+                    <a href="https://vn.mlb-korea.com/collections/phu-kien">ACCESSORIES</a> &#124;
+                    <a href="https://vn.mlb-korea.com/collections/sale">SALE</a> &#124;
+                    <a style="vertical-align: sub;" href="product-order.html"><img src="images/bag-icon.png"
+                    alt="Shopping cart" width="30"></a> &#124;
+                    <a href="login.html"><img src="images/user.png" alt="Login" width="25"></a>
+                </b>
+            </nav>  
+        </header>
+        <div>
+            <a href="https://vn.mlb-korea.com/collections/new-arrivals/"><img src="images/mlb-banner.webp" alt="mlb mlb banner" width="95%"></a>
+        </div>
+        <main>
+                <h2>Order Information</h2>
+                <form style="width: 500px; font-size: larger;" action="form-processing" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend><b>Personal Information</b></legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                    
+                    <br>
+
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                    
+                    <br>
+
+                    <label for="birthday">Date of birth:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Shipping Information</b></legend>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+
+                    <br>
+
+                    <label for="district">District</label>
+                    <input type="text" id="district" name="district">
+
+                    <br>
+
+                    <label for="city">City</label>
+                    <select name="city" id="city">City
+                    <option value="">--Please choose your city--</option>
+                    <option value="hcmc">Ho Chi Minh City</option>
+                    <option value="hanoi">Ha Noi City</option>
+                    <option value="danang">Da Nang City</option>
+                    <option value="haiphong">Hai Phong City</option>
+                    <option value="cantho">Can Tho City</option>
+                    </select>
+
+                    <br>
+
+                    <label for="postcode">Postcode</label>
+                    <input type="number" id="postcode" name="postcode">
+                </fieldset>
+                <fieldset>
+                    <legend><b>Payment</b></legend>
+                    <label for="payment">Method:</label>
+                    <select name="payment" id="payment">
+                        <option value="">--Please choose your method--</option>
+                        <option value="cod">COD</option>
+                        <option value="banking">Banking</option>
+                    </select>
+                </fieldset>
+                <input style="margin-bottom: 20px; width: 50px" type="submit" value="Order Now!">    
+            </form>
+        </main>
+        <footer>
+            <p>Email: <a href="mailto:customercare@maisonrmi.com" target="_blank">customercare@maisonrmi.com</a></p>
+            <p>Hotline: <a href="tel:1900299268" target="_blank">1900 299268</a></p>
+            <p>
+            <a href="https://www.facebook.com/mlb.kr.vn" target="_blank"><img src="images/facebook-icon.png" alt="Link to MLB Facebook's page" width="30"></a>&nbsp;
+            <a href="https://www.instagram.com/mlb.vn/" target="_blank"><img src="images/instagram-icon.png" alt="Link to MLB Instagram's page" width="30"></a>
+            </p>
+            <p>Made by Anh Khoi with inspiration from <a href="https://vn.mlb-korea.com/">MLB Vietnam website</a> 🥰🥰🥰 </p>
+        </footer>
+    </center>
+</body>
+</html>
